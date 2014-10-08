@@ -38,6 +38,11 @@ module HackernewsRuby
       get(url, params)
     end
 
+    def top_stories(params={})
+      url ="/#{HackernewsRuby.api_version}/topstories.json?"
+      get(url, params)
+    end
+
 
     private
 

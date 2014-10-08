@@ -47,7 +47,14 @@ describe HackernewsRuby::Client do
       expect(user.about).to eq "This is a test"
       expect(user.created).to eq 1173923446
     end
+  end
 
+  it "#top_storeis" do
+    VCR.use_cassette('top_stories') do
+      tstories = client.top_stories
 
+      expect(tstories).to be_kind_of Array
+      expect(tstories.all? { |id| id.is_a? Fixnum} ).to eq true
+    end
   end
 end
