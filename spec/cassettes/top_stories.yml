@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/top_stories.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Length:
+      - '36'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error" : "Permission denied"
+        }
+    http_version: 
+  recorded_at: Wed, 08 Oct 2014 18:32:49 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/topstories.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '801'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: "[8427086,8426984,8427468,8427757,8426148,8428007,8427484,8428182,8428418,8422599,8427174,8427676,8428231,8426349,8428159,8426561,8427036,8424696,8426558,8422087,8426411,8427924,8426764,8422928,8425246,8426104,8426803,8425575,8422581,8425209,8423825,8424502,8427114,8420274,8426937,8427903,8424165,8425799,8425501,8428067,8422051,8428446,8424391,8425463,8426617,8425797,8422408,8426548,8428149,8420902,8428257,8427843,8426232,8422546,8424333,8427186,8416393,8428078,8427944,8423633,8421656,8428488,8426300,8427483,8419658,8421594,8417062,8420309,8423936,8428289,8424907,8428261,8419222,8416693,8422695,8428163,8427577,8426816,8424320,8425663,8427192,8427401,8427764,8426900,8426985,8426365,8423007,8421866,8426809,8425385,8427873,8427633,8421518,8424438,8410519,8400778,8415595,8424264,8418464,8418085]"
+    http_version: 
+  recorded_at: Wed, 08 Oct 2014 18:35:07 GMT
+recorded_with: VCR 2.8.0

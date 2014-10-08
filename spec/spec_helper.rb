@@ -4,6 +4,7 @@ require 'coveralls'
 Coveralls.wear!
 
 require 'vcr'
+require 'pry'
 require 'hackernews_ruby'
 
 VCR.configure do |c|
