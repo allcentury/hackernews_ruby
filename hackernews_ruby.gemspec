@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = HackernewsRuby::VERSION
   spec.authors       = ["Anthony Ross"]
   spec.email         = ["anthony.s.ross@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A wrapper for the Hacker News API}
+  spec.description   = %q{A ruby wrapper for the new Hacker News API}
   spec.homepage      = ""
   spec.license       = "MIT"
 

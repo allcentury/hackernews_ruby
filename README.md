@@ -1,6 +1,6 @@
 # HackernewsRuby
 
-TODO: Write a gem description
+A wrapper for the new Hacker News API.
 
 ## Installation
 
