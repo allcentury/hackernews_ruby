@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/2921983.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '291'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"by":"norvig","id":2921983,"kids":[2922097,2922429,2924562,2922709,2922573,2922140,2922141],"parent":2921506,"text":"Aw
+        shucks, guys ... you make me blush with your compliments.<p>Tell you what,
+        Ill make a deal: I''ll keep writing if you keep reading. K?","time":1314211127,"type":"comment"}'
+    http_version: 
+  recorded_at: Wed, 08 Oct 2014 14:57:04 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/126809.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '368'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"by":"pg","id":126809,"kids":[126822,126823,126993,126824,126934,127411,126888,127681,126818,126816,126854,127095,126861,127313,127299,126859,126852,126882,126832,127072,127217,126889,127535,126917,126875],"parts":[126810,126811,126812],"score":46,"text":"","time":1204403652,"title":"Poll:
+        What would happen if News.YC had explicit support for polls?","type":"poll"}'
+    http_version: 
+  recorded_at: Wed, 08 Oct 2014 15:02:11 GMT
+recorded_with: VCR 2.8.0
