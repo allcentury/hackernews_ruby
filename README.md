@@ -1,5 +1,7 @@
 # HackernewsRuby
 
+[![Coverage Status](https://img.shields.io/coveralls/allcentury/hackernews_ruby.svg)](https://coveralls.io/r/allcentury/hackernews_ruby)
+
 A wrapper for the new Hacker News API.
 
 ## Installation
