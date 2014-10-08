@@ -28,9 +28,8 @@ module HackernewsRuby
                                 end
     end
 
-    def get_story
-      url =  "https://hacker-news.firebaseio.com/v0/item/8863.json"
-      params = {}
+    def get_item(id, params={})
+      url = "/#{HackernewsRuby.api_version}/item/#{id}.json"
       get(url, params)
     end
 
