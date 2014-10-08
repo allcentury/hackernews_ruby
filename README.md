@@ -33,15 +33,24 @@ Now you can do:
 ```ruby
 client.get_item(834129)
 ```
-This will get any item available on the API such as stories, comments, polls and jobs.
+This will get any item available on the API by ID such as stories, comments, polls and jobs.
 
 Say you wanted the title of a story:
 
 ```ruby
-story = client.get_item(8863)
+story = client.get_item(8863) #story_id
 story.title
 => "My YC app: Dropbox - Throw away your USB drive"
 ```
+
+Say you wanted to fetch a particular user:
+
+```ruby
+user = client.get_user('jl') #userid is case sensitive
+user.about
+=> "This is a test"
+```
+
 
 ## Contributing
 
