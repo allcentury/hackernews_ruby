@@ -13,4 +13,3 @@
 *.a
 mkmf.log
 .coveralls.yml
-.travis.yml
