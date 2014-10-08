@@ -15,7 +15,7 @@ end
 RSpec.configure do |c|
 
   HackernewsRuby.configure do |config|
-    config.api_url = "https://hacker-news.firebaseio.com/v0/item/8863.json"
+    config.api_url = "https://hacker-news.firebaseio.com"
     config.api_version = "v0"
   end
 
