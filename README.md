@@ -50,7 +50,7 @@ score | The story's score, or the votes for a pollopt.
 title | The title of the story or poll.
 parts | A list of related pollopts, in display order.
 
-To get an item simply do:
+To get an **item** simply do:
 
 ```ruby
 client.get_item(834129)
@@ -101,9 +101,10 @@ This will return an array of ID's.  To get each story after that, just use the g
 ```ruby
 stories = client.top_stories
 stories.each do |story|
-  puts story.title
-  puts story.score
-  puts story.url
+  resp = client.get_item(story)
+  puts resp.title
+  puts resp.score
+  puts resp.url
 end
 ```
 
