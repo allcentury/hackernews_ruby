@@ -3,6 +3,6 @@ Bundler.setup
 
 require 'hackernews_ruby'
 
-Rspec.configure do |config|
+RSpec.configure do |config|
 
 end
