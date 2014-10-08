@@ -1,7 +1,10 @@
 require 'bundler/setup'
 Bundler.setup
-require 'hackernews_ruby'
+require 'coveralls'
+Coveralls.wear!
+
 require 'vcr'
+require 'hackernews_ruby'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
