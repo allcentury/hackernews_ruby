@@ -33,6 +33,12 @@ module HackernewsRuby
       get(url, params)
     end
 
+    def get_user(id, params={})
+      url = "/#{HackernewsRuby.api_version}/user/#{id}.json"
+      get(url, params)
+    end
+
+
     private
 
     def default_headers
