@@ -7,7 +7,7 @@ describe HackernewsRuby::Client do
     expect(client.connection).to be_kind_of Faraday::Connection
   end
   it '#get_item story' do
-    VCR.use_cassette('get_story', record: :new_episodes, re_record_interval: 604800) do
+    VCR.use_cassette('get_story') do
       story = client.get_item(8863)
 
       expect(story).to_not be_nil
@@ -18,7 +18,7 @@ describe HackernewsRuby::Client do
   end
 
   it '#get_item comment' do
-    VCR.use_cassette('get_comment', record: :new_episodes, re_record_interval: 604800) do
+    VCR.use_cassette('get_comment') do
       comment = client.get_item(2921983)
 
       expect(comment).to_not be_nil
@@ -29,7 +29,7 @@ describe HackernewsRuby::Client do
 
   it '#get_item poll' do
 
-    VCR.use_cassette('get_comment', record: :new_episodes, re_record_interval: 604800) do
+    VCR.use_cassette('get_comment') do
       poll = client.get_item(126809)
 
       expect(poll).to_not be_nil
@@ -41,7 +41,7 @@ describe HackernewsRuby::Client do
   end
 
   it '#get_user' do
-    VCR.use_cassette('get_user', record: :new_episodes, re_record_interval: 604800) do
+    VCR.use_cassette('get_user') do
       user = client.get_user('jl')
 
       expect(user.about).to eq "This is a test"
