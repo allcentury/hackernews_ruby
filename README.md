@@ -1,6 +1,6 @@
 # HackernewsRuby
 
-[![Coverage Status](https://coveralls.io/repos/allcentury/hackernews_ruby/badge.png?branch=client)](https://coveralls.io/r/allcentury/hackernews_ruby?branch=client)
+[![Coverage Status](https://coveralls.io/repos/allcentury/hackernews_ruby/badge.png?branch=master)](https://coveralls.io/r/allcentury/hackernews_ruby?branch=master)
 
 A wrapper for the new Hacker News API.
 
