@@ -1,6 +1,6 @@
 # HackernewsRuby
 
-[![Coverage Status](https://img.shields.io/coveralls/allcentury/hackernews_ruby.svg)](https://coveralls.io/r/allcentury/hackernews_ruby)
+[![Coverage Status](https://coveralls.io/repos/allcentury/hackernews_ruby/badge.png?branch=client)](https://coveralls.io/r/allcentury/hackernews_ruby?branch=client)
 
 A wrapper for the new Hacker News API.
 
@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Instantiate a client like so:
+
+```ruby
+client = HackernewsRuby::Client.new
+```
+
+Now you can do:
+
+```ruby
+client.get_item(834129)
+```
+This will get any item available on the API such as stories, comments, polls and jobs.
+
+Say you wanted the title of a story:
+
+```ruby
+story = client.get_item(8863)
+story.title
+=> "My YC app: Dropbox - Throw away your USB drive"
+```
 
 ## Contributing
 
