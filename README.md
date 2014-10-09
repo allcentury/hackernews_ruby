@@ -109,6 +109,18 @@ stories.each do |story|
 end
 ```
 
+To get the most updated Profiles & Itemss you can call:
+
+```ruby
+updates = client.updated
+updates.items
+=> [1212, 1214]
+updates.profiles
+=> [5653, 25456]
+```
+
+
+
 
 ## Contributing
 
