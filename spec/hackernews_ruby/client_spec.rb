@@ -57,4 +57,13 @@ describe HackernewsRuby::Client do
       expect(tstories.all? { |id| id.is_a? Fixnum} ).to eq true
     end
   end
+
+  it "#changed" do
+    VCR.use_cassette('changed') do
+      changed = client.changed
+
+      expect(changed.items).to be_kind_of Array
+      expect(changed.profiles).to be_kind_of Array
+    end
+  end
 end

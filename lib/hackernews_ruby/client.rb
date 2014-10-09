@@ -30,18 +30,35 @@ module HackernewsRuby
                                 end
     end
 
+    #get_item expects an ID
+    #call it like this HackernewsRuby::Client.new.get_item(2324)
+
     def get_item(id, params={})
       url = "/#{HackernewsRuby.api_version}/item/#{id}.json"
       get(url, params)
     end
+
+    #get_user expects a username
+    #HackernewsRuby::Client.new.get_user('allcentury')
 
     def get_user(id, params={})
       url = "/#{HackernewsRuby.api_version}/user/#{id}.json"
       get(url, params)
     end
 
+    #top_stories returns an array of the top 100 storeis
+    #HackernewsRuby::Client.new.top_stories
+
     def top_stories(params={})
-      url ="/#{HackernewsRuby.api_version}/topstories.json?"
+      url = "/#{HackernewsRuby.api_version}/topstories.json"
+      get(url, params)
+    end
+
+    #changed returns a hash of updates for profiles and items
+    #HackernewsRuby::Client.new.changed
+
+    def changed(params={})
+      url = "/#{HackernewsRuby.api_version}/updates.json"
       get(url, params)
     end
 

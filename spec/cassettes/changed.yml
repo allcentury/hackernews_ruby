@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/updates.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '352'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"items":[8434181,8434394,8434393,8432431,8431245,8434016,8425799,8434342,8429607,8419222,8432423,8433789,8434023,8433608,8434344],"profiles":["bluthru","linkeex","antfarm","cryptoz","benesy","rmgraham","r0muald","ComNik","rufugee","akassover","NickCE","fla","mkempe","jonknee","eoi","ark15","mrb","mkup","redtrackker","dnetesn","bribri","spectruman"]}'
+    http_version: 
+  recorded_at: Thu, 09 Oct 2014 18:56:05 GMT
+recorded_with: VCR 2.8.0

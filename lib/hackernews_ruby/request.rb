@@ -19,5 +19,6 @@ module HackernewsRuby
 
       response.body
     end
+
   end
 end
