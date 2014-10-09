@@ -2,6 +2,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/allcentury/hackernews_ruby/badge.png?branch=master)](https://coveralls.io/r/allcentury/hackernews_ruby?branch=master)
 [![Build Status](https://travis-ci.org/allcentury/hackernews_ruby.svg?branch=master)](https://travis-ci.org/allcentury/hackernews_ruby)
+[![Gem Version](https://badge.fury.io/rb/hackernews_ruby.svg)](http://badge.fury.io/rb/hackernews_ruby)
 
 A wrapper for the new Hacker News API.
 
