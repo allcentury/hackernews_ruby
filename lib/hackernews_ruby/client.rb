@@ -10,8 +10,10 @@ module HackernewsRuby
 
 
     def initialize(options={})
-      @api_url = options[:api_url].nil? ? HackernewsRuby.api_url : options[:api_url]
-      @api_version = options[:api_version].nil? ? HackernewsRuby.api_version : options[:api_version]
+      @api_url = "https://hacker-news.firebaseio.com"
+      @api_version = "v0"
+      @api_url = options[:api_url].nil? ? api_url : options[:api_url]
+      @api_version = options[:api_version].nil? ? @api_version : options[:api_version]
 
       reload_config
     end
@@ -55,8 +57,8 @@ module HackernewsRuby
     end
 
     def reload_config
-      HackernewsRuby.api_url = api_url
-      HackernewsRuby.api_version = api_version
+      HackernewsRuby.api_url = @api_url
+      HackernewsRuby.api_version = @api_version
     end
   end
 end

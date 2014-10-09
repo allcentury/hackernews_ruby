@@ -12,16 +12,7 @@ module HackernewsRuby
 
     ## configure default
     def configure
-      load_defaults
       yield self
-      true
-    end
-
-    private
-
-    def load_defaults
-      self.api_url ||= 'https://hacker-news.firebaseio.com'
-      self.api_version ||= 'v0'
     end
 
   end
