@@ -82,7 +82,7 @@ karma | The user's karma.
 about | The user's optional self-description. HTML.
 submitted | List of the user's stories, polls and comments.
 
-Say you wanted to fetch a particular **user**:
+Say you wanted to fetch a particular **#user**:
 
 ```ruby
 user = client.get_user('jl') #userid is case sensitive
@@ -92,13 +92,13 @@ user.about
 
 ## Live Data
 
-To fetch the top 100 stories:
+To fetch the top 100 stories use **#top_stories**:
 
 ```ruby
 stories = client.top_stories
 ```
 
-This will return an array of ID's.  To get each story after that, just use the get_item method like this:
+This will return an array of ID's.  To get each story after that, just use the **#get_item** method like this:
 
 ```ruby
 stories = client.top_stories
@@ -110,7 +110,7 @@ stories.each do |story|
 end
 ```
 
-To get the most updated Profiles & Itemss you can call:
+To get the most updated Profiles & Items you can use **#updated**:
 
 ```ruby
 updates = client.updated
@@ -120,6 +120,19 @@ updates.profiles
 => [5653, 25456]
 ```
 
+To get the latest item created you need to call **#max_item**:
+
+```ruby
+latest = client.max_item
+=> 12343
+```
+
+Or to get contents of the item, just method chain:
+
+```ruby
+latest = client.max_item
+client.get_item(latest)
+```
 
 
 

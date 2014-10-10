@@ -66,4 +66,14 @@ describe HackernewsRuby::Client do
       expect(changed.profiles).to be_kind_of Array
     end
   end
+
+  it "#max_id" do
+    VCR.use_cassette('max_id') do
+      latest = client.max_item
+
+      expect(latest).to be_kind_of String
+      expect(latest.length).to be < 12
+      expect(latest.to_i.to_s).to eq latest
+    end
+  end
 end

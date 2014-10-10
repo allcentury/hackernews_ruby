@@ -1,0 +1,286 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/maxid.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Length:
+      - '36'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error" : "Permission denied"
+        }
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 15:46:34 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '7'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '8438316'
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 15:47:06 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0//v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Length:
+      - '36'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error" : "Permission denied"
+        }
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:20:54 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0//v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Length:
+      - '36'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error" : "Permission denied"
+        }
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:21:53 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Length:
+      - '36'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "error" : "Permission denied"
+        }
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:22:25 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '7'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '8438954'
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:22:50 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/maxitem.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '7'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '8438954'
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:22:50 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby Gem vy HackerNews_Ruby 0.0.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Allow:
+      - OPTIONS,GET
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '805'
+    body:
+      encoding: UTF-8
+      string: |
+        <!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+          <title>Forge: Firebase Graphical Debugger</title>
+          <meta name="description" content="Forge: Firebase Graphical Debugger">
+          <meta name="author" content="Firebase, Inc.">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+
+          <script type="text/javascript">
+            var FirebaseForge = {
+              constants: {
+                web_root :  "https://www.firebase.com",
+                cdn_root :  "https://cdn.firebase.com/v0",
+                auth_root:  "https://auth.firebase.com",
+                log_level:  "info"
+              }
+            };
+          </script>
+
+          <!-- SCRIPTS -->
+          <script type"text/javascript" src="https://www.firebase.com/resources-prod/forge.head.loader.js"></script>
+
+        </head>
+        <body></body>
+        </html>
+    http_version: 
+  recorded_at: Fri, 10 Oct 2014 17:23:40 GMT
+recorded_with: VCR 2.8.0
