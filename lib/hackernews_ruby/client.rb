@@ -62,6 +62,8 @@ module HackernewsRuby
       get(url, params)
     end
 
+    #max_item returns the most recently created item on HN
+    #HackernewsRuby::Client.new.max_item
     def max_item(params={})
       url = "/#{HackernewsRuby.api_version}/maxitem.json"
       get(url, params)
