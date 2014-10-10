@@ -62,6 +62,11 @@ module HackernewsRuby
       get(url, params)
     end
 
+    def max_item(params={})
+      url = "/#{HackernewsRuby.api_version}/maxitem.json"
+      get(url, params)
+    end
+
 
     private
 
